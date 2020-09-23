@@ -15,6 +15,13 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
     conn.write('Name: ELC');
+    // conn.write('Move: up');
+    // setTimeout(() => {
+    //   conn.write('Move: up');
+    //   setTimeout(() => {
+    //     conn.write('Move: up');
+    //   },50);
+    // },50);
   });
 
   return conn;
